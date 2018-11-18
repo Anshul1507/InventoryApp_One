@@ -24,7 +24,7 @@ public class LibDBHelper extends  SQLiteOpenHelper {
             _ID+" INTEGER PRIMARY KEY AUTOINCREMENT ," +
             NAME+" TEXT, "+
             PRICE+" TEXT,"+
-            QUANTITY+" TEXT,"+
+            QUANTITY+" INTEGER,"+
             SUPLIER_NAME+" TEXT,"+
             SUPLIER_CONTACT+" TEXT"+
             ")";
@@ -45,7 +45,4 @@ public class LibDBHelper extends  SQLiteOpenHelper {
         db.execSQL(DROP_QUERY);
         onCreate(db);
     }
-
-
-
 }

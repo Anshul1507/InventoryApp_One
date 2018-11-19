@@ -27,7 +27,7 @@ public class LibDBHelper extends  SQLiteOpenHelper {
             QUANTITY+" INTEGER,"+
             SUPLIER_NAME+" TEXT,"+
             SUPLIER_CONTACT+" TEXT"+
-            ")";
+            ");";
     public static final String DROP_QUERY="DROP TABLE IF EXISTS "+TABLE;
 
     public LibDBHelper(Context context) {
